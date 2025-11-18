@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="styleSheet" href="\css\Styles.css"> <!-- Importa el fichero de estilos-->
+    <!--Siuientes 3 lieans para importar las fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<!--********************************Empieza el body*******************************************-->
+
+<body>
+
+    <header> <!--La cabecera de la web-->
+
+        <a href="index.html"><img src="\png\Logo voleibol cabecera.png" alt=""></a> <!--El logo-->
+
+        <div> <!-- Para redes y menu en un div-->
+
+            <div class="redes_principal"> <!--Redes en al cabecera-->
+
+                <ul>
+
+                    <li><a href="#"><img src="\png\faceboock_color.png" alt=""></a></li>
+                    <li><a href="#"><img src="\png\instagram_color.png" alt=""></a></li>
+                    <li><a href="#"><img src="\png\tiwter-color.png" alt=""></a></li>
+
+                </ul>
+            </div>
+
+            <nav> <!-- Menú principal-->
+
+                <button><a href="index.html">INICIO</a></button>
+                <button><a href="#">CLUB</a></button>
+                <button><a href="#">AGENDA</a></button>
+                <button><a href="#">EQUIPOS</a></button>
+                <button><a href="#">NOTICIAS</a></button>
+                <button><a href="#">CONTACTO</a></button>
+
+            </nav>
+        </div>
+
+
+
+    </header>
+
+    <div class="hero"> <!--Div para el hero-->
+
+        <h1>Apuntate</h1>
+
+    </div>
+
+    <div class="contenedor"> <!--Este div contiene todo el cuerpo para poder luego organizar los elementos-->
+
+        <div class="c-formulario"> <!--Recoge todo lo que contiene el formulario incluido el titulo-->
+
+            <h2>No te quedes fuera ¡Apuntate!</h2>
+
+            <form action=""> <!--Formulario-->
+
+                <div class="requerido"> <!-- Clase para diferenciar los requeridos-->
+                    <label for="nombre">Nombre y apellidos:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="requerido">
+                    <label for="telefono">Telefono</label>
+                    <input type="text" id="telefono" name="telefono" placeholder="Formato +00 000 000 000" required>
+                </div>
+
+                <div> <!--Selector de si o no-->
+
+                    <label for="ampa"> ¿Perteneces al AMPA? </label>
+
+                    <select name="ampa" id="ampa">
+
+                        <OPtion value="Si">Si</OPtion>
+                        <option value="No">No</option>
+
+                    </select>
+
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div>
+                    <label for="observaciones">Observaciones:</label>
+                    <textarea id="observaciones" name="observaciones"
+                        placeholder="Cualqier cosa que consideres importante"></textarea>
+                </div>
+
+                <div class = "pie-form">
+
+                    <button type="submit" class="boton-imagen"></button> <!-- Boton tipo imagen -->
+
+                    <p>Los campos marcados con * son obligatorios</p>
+
+                </div>
+
+            </form>
+
+        </div>
+
+
+        <div class="imagen_jugando"> <!-- div para la imagen lateral-->
+
+            <img src="\png\jugando.png" alt="Imagen Jugando">
+
+        </div>
+    </div>
+
+    <footer> <!--  *********************Empieza el pie de pagina- ****************** -->
+
+        <div> <!--Div para logo y copy rigth-->
+
+            <a href="index.html"><img src="\png\Logo OSCURO voleibol.png" alt=""></a>
+            <p>©2025 voleiconselleria.com</p>
+
+        </div>
+
+        <div> <!--Div redes sociales del pie-->
+
+
+            <ul>
+
+                <li><a href="#"><img src="\png\facebook claro.png" alt=""></a></li>
+                <li><a href="#"><img src="\png\insta claro.png" alt=""></a></li>
+                <li><a href="#"><img src="\png\tiwter claro.png" alt=""></a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- Divs para los enlaces a las paginas de interes de la web e información de contacto-->
+
+        <div>
+
+
+            <p>C\ Monestir de Poblet, s/n</p>
+            <p> 46015 València</p>
+            <p> +34 961 206 100</p>
+
+        </div>
+
+        <div>
+
+
+            <p><a href="#">Politica de privacidad</a></p>
+            <p><a href="#">Cookies</a></p>
+            <p><a href="#">contacto</a></p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
