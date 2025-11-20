@@ -1,0 +1,492 @@
+/* ******************************* ESTILOS GENERALES ********************************** */
+
+html {
+
+    background-color: rgb(255, 255, 255);
+    /*Color de fondo para la web*/
+    min-width: 1000px;
+    /*Ancho minimo pensando en ventanas de pc*/
+
+}
+
+body {
+
+    background-color: rgb(230, 230, 230);
+    /*Color de fondo para el body*/
+    width: 80%;
+    /* Ancho del cuerpo limitado al 80% del ancho de HTML */
+    height: 1000px;
+    /*Altura para el body*/
+    margin: auto;
+    /* Centra el cuerpo horizontalmente en la página */
+    min-width: 800px;
+    /* Anchura mínima del cuerpo (800 pixeles, pensando en pantallas de pc */
+    font-family: 'Open Sans', sans-serif;
+    /* Aplica la fuente general a todo el texto del de la web */
+
+}
+
+/* ***************************** HEADER: CABECERA Y NAVEGACIÓN ===************************************* */
+
+header {
+
+    display: block;
+    /* Define la relación de la caja con el entorno */
+    padding: 10px 20px;
+    /* Espacio interno */
+    overflow: hidden;
+    /* Para que no se salgan de su contenedor */
+}
+
+header img {
+
+    width: 7.5em;
+    /* Define el ancho del logo  */
+    height: auto;
+    /* Define la altura del logo */
+    float: left;
+    /* Hacemos que el logo flote a la izquierda para que el resto del contenido lo rodee */
+    display: block;
+    /* Asegura que la imagen se comporte como un bloque para float */
+
+}
+
+header>div {
+
+    float: right;
+    /* Flota todo el bloque de la derecha (Redes + Menú)  */
+    width: auto;
+    /* Asegura que ocupe todo el espacio que pueda, manteniendo el contenido de la derecha */
+    display: block;
+    /* Permite que los elementos internos se apilen correctamente */
+    margin-right: 40px;
+    /* Para separar todo el bloque del borde izquierdo*/
+
+}
+
+/* Contenedor UL de redes sociales */
+.redes_principal ul {
+
+    list-style: none;
+    /* Elimina los puntos de la lista */
+    margin: 0;
+    /* Limpia márgenes y paddings por defecto */
+    padding: 0;
+    overflow: hidden;
+    /* Corrige el colapso del <ul> debido a los <li> flotantes */
+    display: block;
+    /* Asegura que el <ul> se comporte como un bloque */
+}
+
+/* Elementos LI de las redes sociales */
+.redes_principal ul li {
+
+    float: right;
+    /* Coloca los iconos horizontalmente */
+    margin-left: 10px;
+    /* Espacio entre los iconos */
+    display: block;
+    /* Permite definir el tamaño */
+    border-top: 5px solid #d84c0000;
+    /*borde tranparente para que no se desplacen los iconos al asignarle un borde */
+}
+
+.redes_principal ul li:hover {
+
+    border-top: 5px solid #D84C00;
+    /*Borde superior para remarcar que el raton está encima*/
+
+}
+
+
+/* Las imágenes de los iconos de redes sociales */
+.redes_principal ul li img {
+
+    width: 2em;
+    /* Define el tamaño de los iconos de red social */
+}
+
+/* El NAV está automáticamente debajo de las redes porque .redes_principal no está flotando */
+nav {
+    
+    width: 100%;
+    /* Asegura que el NAV use todo el ancho de su padre (el <div> flotante) */
+    float: none;
+    /* Asegura que el NAV no flote */
+    margin-top: 10px;
+    /* Margen superior para separarlo de las redes sociales */
+    text-align: right;
+    /* Alinea los elementos internos a la derecha  */
+
+}
+
+/* El enlace que contiene el botón */
+nav a {
+    
+    display: inline-block;
+    /* Hace que los enlaces se muestren horizontalmente, pero sigan siendo bloques */
+    margin-left: 10px;
+    /* Margen entre botones */
+
+}
+
+/* El botón dentro del enlace */
+nav button {
+    
+    width: auto;
+    /* Define el ancho del botón */
+    padding: 10px 10px;
+    /* Espacios interiores */
+    background-color: #0265A2;
+    /*color para los botones en reposo*/
+    border-radius: 8px;
+    /* Borde redondeado */
+    border: 0px;
+    /* Elimina el borde  */
+
+}
+
+nav button a {
+
+    margin: 0;
+    /*Para centrar los textos*/
+    color: white;
+    /* Color del texto*/
+    font-size: 1.3em;
+    /* Tamaño de fuente relativo al tamaño del padre */
+    font-weight: 700;
+    /*Grosor de la fuente*/
+    text-decoration: none;
+    /*Quita el subrallado*/
+}
+
+button:hover {
+
+    background-color: #D84C00;
+    /* Cambia el color de fondo al pasar el ratón */
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+    /* Añade una sombra sutil al pasar el ratón */
+}
+
+.hero {
+
+    background-image: url('/jpg/imagen cabecera interoriores.jpg');
+    /* Establece la imagen de fondo para la sección hero */
+    height: 90px;
+    /* Altura fija  */
+    background-position: center;
+    /* Centra la imagen de fondo horizontal y verticalmente */
+    background-size: cover;
+    /*La imagen de fondo cubre todo el hero*/
+}
+
+.hero > h1 {
+
+    text-align: center;
+    /* Centra el texto del título horizontalmente */
+    color: rgb(0, 0, 0);
+    /*Color para el titulo*/
+    font-size: 2em;
+    /* Tamaño de fuente relativo a la fuente del elemento padre (2em) */
+    text-shadow: 0 0 20px white;
+    /* Resplandor blanco alrededor del texto para que se vea en fondos coloridos */
+    font-family: Oswald;
+    /* Fuente para el título */
+
+}
+
+.contenedor {
+
+    display: block;
+    width: 100%;
+    /* Soluciona el problema de colapso causado por los 'float' */
+    overflow: hidden;
+}
+
+.c-formulario {
+
+    background-image: url("/png/blog.png");
+    /* Fondo con una imagen */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-position: right top;
+    /* obliga a la imagen de fondo a posicionarse arriba y a la derecha */
+    background-size: cover;
+    /* Asegura que la imagen cubra todo el fondo del formulario */
+    width: 50%;
+    /* El formulario ocupa el 50% del ancho del contenedor  */
+    height: 700px;
+    margin: 10px 2px 10px 5px;
+    /* Margen alrededor del formulario*/
+    font-size: 1.3em;
+    /* Tamaño de fuente base relativo para el contenido del formulario */
+
+    /*Para que se quede a la izquieda*/
+    float: left;
+    position: relative;
+    left: 20px;
+
+}
+
+.c-formulario>h2 {
+
+    margin-top: 70px;
+    
+    text-align: center;
+    /* Centra el texto del título horizontalmente */
+    color: rgb(0, 0, 0);
+    /*Color del texto*/
+    font-size: 1.4em;
+    /* Tamaño de fuente relativo a la fuente del elemento padre  */
+    font-family: Oswald;
+    /* Fuente para el título */
+
+}
+
+.c-formulario>form {
+
+    margin: 10px 20px;
+    /*Margen superior e inferior mas laterales*/
+
+
+}
+
+/* selectores para los inputs, selects y textarea solo del formulario* por si hubierna mas*/
+.c-formulario>form>div input,
+.c-formulario>form>div select,
+.c-formulario>form>div textarea {
+
+    display: block;
+    /*Wue ocupen toda su linea*/
+    width: 90%;
+    /*que ocupen solo el 90% para que pueda haber margen*/
+    height: 30px;
+    /*Altura fija*/
+    font-size: 1em;
+    /*Tamaño de la letra realtivo al padre*/
+
+}
+
+.c-formulario>form>div textarea {
+
+    height: 80px;
+    /*Sobreescribimos la altura de el area de texto*/
+
+}
+
+.c-formulario>form>div input:focus,
+.c-formulario>form>div select:focus,
+.c-formulario>form>div textarea:focus {
+
+    /* Estilos al recibir el foco  */
+
+  
+    border-color: #D84C00;
+    /* Cambia el color del borde al recibir el foco */
+    outline: none;
+    /* Elimina el borde de foco predeterminado del navegador  */
+  
+}
+
+.requerido label {
+
+    color: #D84C00;
+    /*color didstinto para las etiquetas de los campos requeridos*/
+}
+
+.requerido label::before {
+
+    content: "*";
+    /*Añadimos un asterisco delane de los campos requeridos*/
+}
+
+.pie-form {
+
+    display: block;
+    /*Para que el pie del formulario ocupe todo el espacio*/
+
+}
+
+.boton-imagen {
+
+    margin-top: 20px;
+    /*Margen superior*/
+    background-color: transparent;
+    /* Elimina el color de fondo del botón para que solo se vea la imagen */
+    background-image: url("/png/apuntate.png");
+    /* Imagen de fondo predeterminada */
+    background-size: contain;
+    /* Ajusta la imagen al tamaño del botón */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-position: center;
+    /* Centra la imagen de fondo */
+    width: 200px;
+    /* Ancho  */
+    height: 70px;
+    /*alto */
+    border: none;
+    /* Quita el borde del boton*/
+    display: inline-block;
+    /*para que no ocupe todo el espacio*/
+    position: relative;
+    /*para poder decirle con la linea de abajo que se posicione a la izquierda con margen de 5px*/
+    left: 5px
+}
+
+.boton-imagen:hover {
+
+    background-image: url("/png/apuntate hover.png");
+    /* Cambia la imagen de fondo al pasar el ratón */
+    background-color: transparent;
+    /* Asegura que el color de fondo siga siendo transparente */
+    box-shadow: 0 0 0 0;
+    /* Elimina la sombra heredada al pasar el raton*/
+}
+
+.pie-form>p {
+
+    display: inline-block;
+    /*Que no ocupe toda la liena*/
+    position: relative;
+    /*Para poder ponerlo al lado derecho*/
+    right: 5px;
+    /*Margen al lado derecho*/
+    width: 50%;
+    /*Anchura*/
+    color: #D84C00;
+    /*color destacado*/
+
+
+}
+
+.imagen_jugando {
+    width: 40%;
+    /*Tamaño maximo para la imagen*/
+    float: right;
+    /*Para que se quede a la derecha con margen junto con las lineas de mas abajo*/
+    position: relative;
+    right: 20px;
+    top: 200px
+}
+
+.imagen_jugando img {
+
+    width: 90%;
+    /*Definimos el ancho relativo al padre*/
+}
+
+footer {
+
+    display: block;
+    /*Para que ocupe toda su liena*/
+    width: 100%;
+    /*Ancho completo*/
+    clear: both;
+    /* Obliga al footer a colocarse debajo de todos los elementos flotantes */
+    height: auto;
+    /* La altura es auto para cuando se encoge la ventana que los textos sigan siendo legibles ocupando espacio en vertical */
+    background-color: rgb(0, 0, 0);
+    /*Color del fondo*/
+    color: white;
+    /*clor de todos los textos */
+    padding: 10px 0;
+    /* Añadimos padding para espacio interno */
+    overflow: hidden;
+    /* Soluciona el colapso causado por los <div> internos flotantes */
+
+}
+
+footer>div {
+    
+    float: left;
+    /* Flota cada <div> a la izquierda para colocarlos horizontalmente */
+    width: 24%;
+    /* Cada <div> debe ocupar el 254% para que los 4 quepan en el 100% con margen */
+    display: block;
+    /* Cambiado de 'inline-block' a 'block' para que 'float: left' funcione correctamente */
+    padding: 5px;
+    /* Añadimos un poco de margen para separación visual */
+    text-align: center;
+    /*Centramos los textos*/
+}
+
+footer>div:nth-child(1)>a {
+    display: block;
+    /* Asegura que el logo se comporte como bloque para apilarse verticalmente sobre el <p> */
+    margin-bottom: 5px;
+    /* Espacio entre el logo y el copyright */
+    width: 80%;
+    /* Centra la imagen horizontalmente ya que tiene un ancho < 100% */
+    margin: 0 auto;
+
+}
+
+/* Define el tamaño de la imagen del logo */
+footer>div:nth-child(1)>a>img {
+    display: block;
+    /*que ocupe todo su liena*/
+    width: 100px;
+    /*evitaos que sea demasido grande*/
+    height: auto;
+    /*La altura la que necesite*/
+    margin: 0 auto;
+    /* Centra el logo si la imagen es más pequeña que 80% */
+}
+
+/* Contenedor <ul> de las redes sociales */
+footer>div:nth-child(2)>ul {
+    list-style: none;
+    /*Le quitamos la decoracion a la lista*/
+    margin: 0;
+    padding: 0;
+    /* CLAVE: Limpia el colapso del <ul> */
+    overflow: hidden;
+    /*Para ocultar el desbordamiento*/
+    display: inline-block;
+    /* Que los iconos aparezcan uno al lado del otro*/
+    margin-top: 30px;
+    /*Para dejar marge superior*/
+
+}
+
+/* Elementos <li> (iconos) de las redes sociales */
+footer>div:nth-child(2)>ul>li {
+    float: left;
+    /*Coloca los iconos horizontalmente */
+    margin-right: 10px;
+    /* Espacio entre iconos */ 
+    border-top: 3px solid transparent;
+    /*Este borde transparente es para que al mostrar un borde al pasr el raton no se desplace cada icono*/
+}
+
+footer>div:nth-child(2)>ul>li:hover {
+
+    border-top: 3px solid white;
+    /*Pone un borde superior para indicar que estas sobre ese icono*/
+
+}
+
+/* Estilo para las imágenes dentro de los li (iconos) */
+footer>div:nth-child(2)>ul>li img {
+    width: 2.5em;
+    /* Ancho relativo */
+    height: 2.5em;
+    /*Alto relativo*/
+
+}
+
+/* Aplicado a los párrafos en las columnas 3 y 4 */
+footer>div:nth-child(3)>p,
+footer>div:nth-child(4)>p {
+   
+    margin: 5px 0;
+    /* Espacio vertical entre cada línea */
+}
+
+body>footer>div:nth-child(4)>p>a {
+
+    color: white;
+    /*Forzar elcolor blanco ya que no le afecta el del pie por ser unos links*/
+
+}
